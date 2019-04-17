@@ -9,6 +9,7 @@
   </view>
   <view class='test-part'>
     <button type="primary" class='test-part-button' bindtap="gotoPhotoPage"> 绘图页 </button>
+    <button type="primary" class='test-part-button' bindtap="gotoCountDownPage"> 倒计时 </button>
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>

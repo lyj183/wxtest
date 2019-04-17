@@ -57,5 +57,11 @@ Page({
     wx.navigateTo({
       url: router.Photo 
     })
+  },
+  // 跳转到倒计时页
+  gotoCountDownPage() {
+    wx.navigateTo({
+      url: router.CountDown
+    })
   }
 })

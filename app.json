@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/photo/photo"
+    "pages/photo/photo",
+    "pages/countDown/countDown"
   ],
   "window": {
     "backgroundTextStyle": "light",

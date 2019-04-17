@@ -1,0 +1,2 @@
+<!--pages/countDown/countDown.wxml-->
+<view class='countDown'>倒计时：<text style='color:red'>{{countDownNum}}</text></view>

@@ -1,2 +1,5 @@
 <!--pages/photo.wxml-->
-<text>pages/photo.wxml</text>
+<view class='container-view'>
+  <button bindtap='takePhoto' type='primary' class='take-photo-button'>照相或选取图片</button>
+  <image class='image-view' src='{{src}}'></image>
+</view>

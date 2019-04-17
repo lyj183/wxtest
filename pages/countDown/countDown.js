@@ -1,14 +1,12 @@
-// pages/photo.js
-
+// pages/countDown/countDown.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    src: '',
-    width: 250,//宽度
-    height: 250,//高度
+    timer: '',
+    countDownNum: '60'
   },
 
   /**
@@ -29,7 +27,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.countDown();
   },
 
   /**
@@ -67,22 +65,19 @@ Page({
 
   },
 
-  takePhoto() {
-    let that = this
-    wx.chooseImage({
-      count: 1, // 最多可以选择的图片张数，默认9
-      sizeType: ['original', 'compressed'],
-      sourceType: ['album', 'camera'],
-      complete(res) {
+  countDown() {
+    let that = this;
+    let countDownNum = that.data.countDownNum;
+    that.setData({
+      timer: setInterval(function() {
+        countDownNum--;
         that.setData({
-          src: res.tempFilePaths[0]
+          countDownNum:countDownNum
         })
-
-      },
-      fail(res) {
-        //
-      }
+        if(countDownNum == 0) {
+          clearInterval(that.data.timer);
+        }
+      }, 1000)
     })
   }
-
 })

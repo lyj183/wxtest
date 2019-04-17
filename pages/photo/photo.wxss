@@ -1,1 +1,16 @@
 /* pages/photo.wxss */
+.container-view {
+  height: 100%;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.take-photo-button {
+  margin: 30rpx;
+}
+.image-view {
+  width: 500rpx;
+  height: 300rpx;
+  background: gainsboro;
+  border: 1rpx solid red;
+}
