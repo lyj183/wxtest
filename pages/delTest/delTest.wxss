@@ -1,50 +1,44 @@
-/* pages/delTest/delTest.wxss */
-page {
-  background-color: white;
+.box{
+  height: 100%;
 }
-
-.container {
-  min-height: 100%;
-  padding: 20rpx 0rpx;
+.item{
+  position:relative;
+  top: 0;
+  height: 150rpx;
+  border: #d9d9d9 solid 1rpx;
+  padding: 0;
+  margin: 20rpx;
+  overflow: hidden;
+  z-index: 1;
 }
-
-.touch-item {
-  font-size: 14px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom:1px solid #ccc;
+.item .content{
+  background-color: #ffffff;
+  height: 100%;
+  position: relative;
+  left: 0;
   width: 100%;
-  overflow: hidden
+  transition: all 0.3s;
+  z-index: 1;
 }
-
-.content {
-  width: 100%;
-  padding: 10px;
-  line-height: 22px;
-  margin-right:0;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  -webkit-transform: translateX(90px);
-  transform: translateX(90px);
-  margin-left: -90px
-}
-
-.del {
-  background-color: orangered;
-  width: 90px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.item .del-button {
+  position: absolute;
+  right: 0;
+  width: 140rpx;
+  height: 100%;
+  background-color: #df3448;
   color: #fff;
-  -webkit-transform: translateX(90px);
-  transform: translateX(90px);
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  top: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  font-size: 24rpx;
+  z-index: 0;
 }
-
-.touch-move-active .content,
-.touch-move-active .del {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
+.item.active .content{
+  left: -140rpx;
+}
+.item.active .del-button{
+  right: 0;
 }

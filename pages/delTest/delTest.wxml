@@ -1,7 +1,9 @@
 <!--pages/delTest/delTest.wxml-->
-<view class="container">
-  <view class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove" wx:for="{{items}}" wx:key="">
-    <view class="content">{{item.content}}</view>
-    <view class="del" catchtap="del" data-index="{{index}}">删除</view>
-  </view>
+<view class="box">
+  <block wx:for='{{list}}' wx:key='item.id' wx:for-index="listIndex">
+    <view class="item {{item.status ? '' :'active'}}">
+      <view id='{{listIndex}}' class="content" bindtouchstart="touchS" bindtouchmove="touchM">{{item.msgText}}</view>
+      <view id='{{listIndex}}' class="del-button" bindtap='delete'>删除</view>
+    </view>
+  </block>
 </view>
