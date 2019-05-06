@@ -26,7 +26,7 @@
   align-items: center;
 }
 
-.test-part-button {
+.test-button {
   margin-top: 30rpx;
   margin-bottom: 30rpx;
 }

@@ -8,8 +8,12 @@
     </block>
   </view>
   <view class='test-part'>
-    <button type="primary" class='test-part-button' bindtap="gotoPhotoPage"> 绘图页 </button>
-    <button type="primary" class='test-part-button' bindtap="gotoCountDownPage"> 倒计时 </button>
+    <button type="primary" class='test-button' bindtap="gotoPhotoPage"> 绘图页 </button>
+    <button type="primary" class='test-button' bindtap="gotoCountDownPage"> 倒计时 </button>
+    <button type="primary" class='test-button' bindtap="gotoComponentPage"> 组件 </button>
+    <button type="primary" class='test-button' bindtap="gotoApiTestPage"> API </button>
+    <button type="primary" class='test-button' bindtap="gotoMapPage"> 地图 </button>
+    <button type="primary" class='test-button' bindtap="gotoDelCell"> 删除 </button>
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>

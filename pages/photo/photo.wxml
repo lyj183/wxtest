@@ -1,5 +1,10 @@
 <!--pages/photo.wxml-->
-<view class='container-view'>
-  <button bindtap='takePhoto' type='primary' class='take-photo-button'>照相或选取图片</button>
-  <image class='image-view' src='{{src}}'></image>
+<view class='pic-container'>
+  <button type='primary' class='photo-btn' bindtap='takePhoto'>拍照</button>
+  <image class='canvas-view' src='{{pic}}'></image>
+  <button type='primary' class='draw-btn' bindtap='drawCanvas'>绘图</button>
+  <canvas canvas-id="myCanvas" class='canvas-view'></canvas>
+  <button type='primary' class='save-btn' bindtap='savePhoto'>上传</button>
+  <view class='text-view'>{{url}}</view>
 </view>
+

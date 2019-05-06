@@ -3,12 +3,17 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/photo/photo",
-    "pages/countDown/countDown"
+    "pages/countDown/countDown",
+    "pages/componentTest/componentTest",
+    "pages/apiTest/apiTest",
+    "pages/map/map",
+    "pages/delTest/delTest"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

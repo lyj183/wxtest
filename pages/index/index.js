@@ -63,5 +63,29 @@ Page({
     wx.navigateTo({
       url: router.CountDown
     })
+  },
+  // 跳转到组件页
+  gotoComponentPage() {
+    wx.navigateTo({
+      url: router.Component
+    })
+  },
+  // 跳转到Api测试页
+  gotoApiTestPage() {
+    wx.navigateTo({
+      url: router.ApiPage
+    })
+  },
+  // 跳转地图
+  gotoMapPage() {
+    wx.navigateTo({
+      url: router.Map
+    })
+  },
+  // 滑动删除
+  gotoDelCell() {
+    wx.navigateTo({
+      url: router.DelPage
+    })
   }
 })

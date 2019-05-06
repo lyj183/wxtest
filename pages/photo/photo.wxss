@@ -1,16 +1,34 @@
 /* pages/photo.wxss */
-.container-view {
-  height: 100%;
-  width: 100%;
-  display: block;
-  text-align: center;
+/* page {
+  opacity: 0.5
+} */
+.pic-container {
+  display: flex;
+  flex-direction:column;
+  align-items:center;
 }
-.take-photo-button {
-  margin: 30rpx;
+.photo-btn {
+  width: 60%;
+  margin-bottom: 10rpx;
 }
-.image-view {
-  width: 500rpx;
-  height: 300rpx;
-  background: gainsboro;
-  border: 1rpx solid red;
+.canvas-view {
+  height: 400rpx;
+  width: 600rpx;
+  border: 1rpx solid;
+}
+.text-view {
+  font-size: 14rpx;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(153,153,153,1);
+}
+.draw-btn {
+  width: 60%;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.save-btn {
+  width: 60%;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
 }

@@ -1,0 +1,12 @@
+<!--pages/apiTest/apiTest.wxml-->
+<view class='api-container'>
+  <view class='brn-part'>
+    <button type='primary' size='mini' class='btn-type' data-type='sys' bindtap='onClickBtn'>获取系统信息</button>    
+  </view>
+  <view class='text-part'>
+    <block wx:for="{{text}}" wx:for-index="key"  wx:for-item="value">
+      <text>{{key}}：{{value}}\n</text>
+    </block>
+  </view>
+</view>
+
