@@ -1,9 +1,12 @@
 <!--pages/map/map.wxml-->
-<view class='inputMap'>
-<input placeholder='搜索'></input>
-</view>
 
-<map id="myMap" show-location class='map-view'/>
+
+<map id="myMap" show-location class='map-view'>
+            <cover-view class='cover-input' bindtap='tapInput'>
+                <cover-view class='text'>{{inputInfo}}</cover-view>
+                <input class='input' value='{{inputModel}}' focus='{{inputFocus}}' bindblur='blurInput'></input>
+            </cover-view>
+</map>
 
 <button type="primary" bindtap="getCenterLocation">获取位置</button>
 <button type="primary" bindtap="moveToLocation">移动位置</button>

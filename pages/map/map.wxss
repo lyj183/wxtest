@@ -5,9 +5,25 @@
   margin-bottom: 20rpx;
 }
 
-.inputMap {
-  position: absolute;
-  margin: 20rpx;
-  background-color: white;
-  z-index: 100;
+.cover-input{
+  width: 80%;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+}
+.text{
+  height: 32px;
+  line-height: 32px;
+}
+.input{
+  height: 32px;
+  line-height: 32px;
+  /* margin-top为text的高度，保持视觉上一致 */
+  margin-top: -32px; 
 }
