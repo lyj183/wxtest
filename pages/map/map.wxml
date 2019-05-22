@@ -1,4 +1,8 @@
 <!--pages/map/map.wxml-->
+<view class='inputMap'>
+<input placeholder='搜索'></input>
+</view>
+
 <map id="myMap" show-location class='map-view'/>
 
 <button type="primary" bindtap="getCenterLocation">获取位置</button>

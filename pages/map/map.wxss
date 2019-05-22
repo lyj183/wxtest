@@ -4,3 +4,10 @@
   height: 800rpx;
   margin-bottom: 20rpx;
 }
+
+.inputMap {
+  position: absolute;
+  margin: 20rpx;
+  background-color: white;
+  z-index: 100;
+}
