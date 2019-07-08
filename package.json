@@ -1,0 +1,22 @@
+{
+  "name": "01-weixintest",
+  "version": "1.0.0",
+  "description": "https://github.com/wx-plugin/image-cropper",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyj183/wxtest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lyj183/wxtest/issues"
+  },
+  "homepage": "https://github.com/lyj183/wxtest#readme",
+  "dependencies": {
+    "miniprogram-slide-view": "0.0.4"
+  }
+}

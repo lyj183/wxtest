@@ -7,7 +7,8 @@
     "pages/componentTest/componentTest",
     "pages/apiTest/apiTest",
     "pages/map/map",
-    "pages/delTest/delTest"
+    "pages/delTest/delTest",
+    "pages/slide/slide"
   ],
   "window": {
     "backgroundTextStyle": "light",

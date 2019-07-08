@@ -57,7 +57,7 @@ Page({
   },
   // 跳转到绘图页
   gotoPhotoPage() {
-    wx.switchTab({
+    wx.navigateTo({
       url: router.Photo
     })
   },
@@ -89,6 +89,12 @@ Page({
   gotoDelCell() {
     wx.navigateTo({
       url: router.DelPage
+    })
+  },
+  // 滑动
+  gotoSlide() {
+    wx.navigateTo({
+      url: router.SlidePage
     })
   }
 })
