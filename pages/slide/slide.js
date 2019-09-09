@@ -1,4 +1,5 @@
 // pages/slide/slide.js
+const SRC = 'assets/images/image-1.png'
 
 Page({
 

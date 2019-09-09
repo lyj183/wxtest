@@ -25,6 +25,33 @@ Page({
 
   },
 
+  // 监听屏幕滚动 判断上下滚动  
+  // https://blog.csdn.net/bright2017/article/details/82819028
+  onPageScroll: function (ev) {
+    var _this = this;
+    //当滚动的top值最大或者最小时，为什么要做这一步是由于在手机实测小程序的时候会发生滚动条回弹，所以为了解决回弹，设置默认最大最小值   
+    if (ev.scrollTop <= 0) {
+      ev.scrollTop = 0;
+    } else if (ev.scrollTop > wx.getSystemInfoSync().windowHeight) {
+      ev.scrollTop = wx.getSystemInfoSync().windowHeight;
+    }
+    //判断浏览器滚动条上下滚动   
+    if (ev.scrollTop > this.data.scrollTop || ev.scrollTop == wx.getSystemInfoSync().windowHeight) {
+      console.log('向下滚动');
+      console.log(ev.scrollTop);
+
+    } else {
+      console.log('向上滚动');
+
+    }
+    //给scrollTop重新赋值    
+    setTimeout(function () {
+      _this.setData({
+        scrollTop: ev.scrollTop
+      })
+    }, 0)
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

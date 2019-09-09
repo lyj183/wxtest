@@ -1,0 +1,27 @@
+<!--components/c_bs_ui/common/wheel/wheel.wxml-->
+<view class='root' style="width: {{width}}; height: {{height}};">
+  <view class='img-box {{style0}}' style="width: {{width}}; height: {{height}};">
+    <image src='{{img0}}' style="width: {{width}};" mode='widthFix'></image>
+  </view>
+  <view class='img-box {{style1}}' style="width: {{width}}; height: {{height}};">
+    <image src='{{img1}}' style="width: {{width}};" mode='widthFix'></image>
+  </view>
+  <view class='card-box'>
+    <form bindsubmit="formAction" report-submit='true'>
+      <block wx:for="{{items}}" wx:key="*">
+        <button class='card {{(items.length == 4 ? "ani-card" : "ani-card-2") + (itemIndex + 3 - index) % items.length}}' bindtap='onClick' data-index="{{index}}" formType="submit">
+          <image src='{{item.cardUrl}}'></image>
+        </button>
+      </block>
+      <!-- <button class='card {{"ani-card-2" + (itemIndex + 2) % 2}}' bindtap='onClick' data-index="1" formType="submit">
+        <image src='http://res.beyonds.com/static-xcx/act/ceb-bank/card-parking.png'></image>
+      </button> -->
+      <!-- <button class='card {{"ani-card" + (itemIndex + 1) % 4}}' bindtap='onClick' data-index="2" formType="submit">
+        <image src='http://res.beyonds.com/static-xcx/act/ceb-bank/card2.png'></image>
+      </button>
+      <button class='card {{"ani-card" + (itemIndex + 0) % 4}}' bindtap='onClick' data-index="3" formType="submit">
+        <image src='http://res.beyonds.com/static-xcx/act/ceb-bank/card3.png'></image>
+      </button> -->
+    </form>
+  </view>
+</view>
