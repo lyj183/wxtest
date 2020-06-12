@@ -8,7 +8,9 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    isShowPop: false,
+    showPop: false
   },
   //事件处理函数
   bindViewTap: function() {
@@ -96,5 +98,22 @@ Page({
     wx.navigateTo({
       url: router.SlidePage
     })
-  }
+  },
+  // 动画弹窗
+  showPop() {
+    this.setData({
+      isShowPop: true,
+      showPop: true
+    })
+  },
+  hidePop() {
+    this.setData({
+      showPop: false
+    })
+    setTimeout(() => {
+      this.setData({
+        isShowPop: false
+      })
+    }, 600)
+  },
 })

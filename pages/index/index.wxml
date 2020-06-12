@@ -15,8 +15,14 @@
     <button type="primary" class='test-button' bindtap="gotoMapPage"> 地图 </button>
     <button type="primary" class='test-button' bindtap="gotoDelCell"> 删除 </button>
     <button type="primary" class='test-button' bindtap="gotoSlide"> slide-view </button>
+    <button type="primary" class='test-button' bindtap="showPop"> 动画弹窗 </button>
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class="pop-bg" wx:if="{{isShowPop}}">
+    <view class="pop-bg-close {{showPop ? '' : 'hidePop'}}" bindtap="hidePop"></view>
+      <view class="pop {{showPop ? '' : 'hidePopBg'}}">
+      </view>
   </view>
 </view>
